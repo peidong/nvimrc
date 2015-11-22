@@ -1,0 +1,2 @@
+# nvimrc
+vimrc for neovim
