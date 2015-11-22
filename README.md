@@ -151,16 +151,16 @@ Keybinding         | Description
     sudo apt-get install aptitude
     sudo aptitude install exuberant-ctags ack-grep git build-essential cmake python-dev
     cd ~
-    git clone https://github.com/peidong/vimrc.git
-    mv vimrc .vim
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/ycm_extra_conf.py ~/.ycm_extra_conf.py
-    mkdir -p ~/.vim/bundle
-    git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+    git clone https://github.com/peidong/nvimrc.git
+    mv nvimrc .nvim
+    ln -s ~/.nvim/nvimrc ~/.nvimrc
+    ln -s ~/.nvim/ycm_extra_conf.py ~/.ycm_extra_conf.py
+    mkdir -p ~/.nvim/bundle
+    git clone https://github.com/Shougo/neobundle.vim ~/.nvim/bundle/neobundle.vim
 
 Then vim, and `:NeoBundleInstall`
 
-    cd ~/.vim/bundle/YouCompleteMe
+    cd ~/.nvim/bundle/YouCompleteMe
     ./install.py --clang-completer --omnisharp-completer --gocode-completer
     mkdir ~/.undodir/
 ## Installing on Windows
@@ -168,4 +168,4 @@ Not done
 
 ## How to install (MacVim)[https://github.com/macvim-dev/macvim/releases/tag/snapshot-80]
 
-    ./configure --with-features=huge --enable-cscope --enable-largefile --enable-luainterp=yes --enable-multibyte --enable-mzschemeinterp --enable-perlinterp=yes --enable-pythoninterp=yes --with-python-config-dir=/usr/lib/python2.7/config --enable-rubyinterp=yes --enable-tclinterp
+    ./configure --with-features=huge --enable-cscope --enable-largefile --enable-luainterp=yes --with-lua-prefix=/usr/local --enable-multibyte --enable-mzschemeinterp --enable-perlinterp=yes --enable-pythoninterp=yes --with-python-config-dir=/usr/lib/python2.7/config --enable-rubyinterp=yes --enable-tclinterp --enable-python3interp=yes --enable-sniff
